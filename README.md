@@ -6,15 +6,15 @@ Useful coupled with Zenhub which supports milestones spanned on multiple reposit
 
 ## Installation
 
-**`ghm` is available for node 7 only... Feel free to make a babelified version via PRs :-)**
+**`ghm-cli` is available for node 7 only... Feel free to make a babelified version via PRs :-)**
 
-1. ```npm i -g ghm```
+1. ```npm i -g ghm-cli```
 2. ```ghm login```
 
 ## Usage
 
 ```shell
-$ node ghm --help
+$ ghm --help
 
 ghm <cmd> [args]
 

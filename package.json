@@ -1,5 +1,5 @@
 {
-  "name": "node-ghm",
+  "name": "ghm-cli",
   "version": "1.0.0",
   "description": "Github multi-repo milestone management CLI",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=7"
   },
-  "repository": "git@github.com:cubyn/node-ghm.git",
+  "repository": "git@github.com:cubyn/ghm-cli.git",
   "author": "Mathieu LEMAIRE",
   "license": "ISC",
   "dependencies": {
