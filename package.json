@@ -1,0 +1,26 @@
+{
+  "name": "node-ghm",
+  "version": "1.0.0",
+  "description": "Github multi-repo milestone management CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=7"
+  },
+  "repository": "git@github.com:cubyn/node-ghm.git",
+  "author": "Mathieu LEMAIRE",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "github": "^9.1.0",
+    "progress": "^1.1.8",
+    "prompt-promise": "^1.0.3",
+    "request": "^2.79.0",
+    "yargs": "^6.6.0"
+  },
+  "bin": {
+    "ghm": "./index.js"
+  }
+}
