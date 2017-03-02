@@ -43,6 +43,7 @@ const argv = yargs
     }, update)
     .example('close "Milestone #1"', 'Will close all milestones named "Milestone #1"')
     .example('update "Milestone #1" --title milestone-1', 'Will rename all milestones named "Milestone #1" to "milestone-1"')
+    .help()
     .argv;
 
 if (!argv._[0]) {
