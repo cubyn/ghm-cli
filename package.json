@@ -1,6 +1,6 @@
 {
   "name": "ghm-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Github multi-repo milestone management CLI",
   "main": "index.js",
   "scripts": {
