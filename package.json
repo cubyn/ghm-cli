@@ -1,6 +1,6 @@
 {
   "name": "ghm-cli",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Github multi-repo management CLI",
   "main": "index.js",
   "scripts": {
