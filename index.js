@@ -2,10 +2,15 @@
 
 const yargs = require('yargs');
 
+process.on('unhandledRejection', (error, promise) => {
+    console.log(error.stack);
+});
+
 const argv = yargs
     .usage('$0 <cmd> [args]')
     .command(require('./lib/commands/login'))
     .command('milestone', 'ghm milestone -h to list sub-commands', require('./lib/commands/milestone'))
+    .command('pull', 'ghm pull -h to list sub-commands', require('./lib/commands/pull'))
     .demand(1, "must provide a valid command")
     .help("h")
     .alias("h", "help")
@@ -17,7 +22,3 @@ if (!argv._[0]) {
     yargs.showHelp();
     process.exit(1);
 }
-
-process.on('unhandledRejection', (error, promise) => {
-    console.log(error.stack);
-});

@@ -35,11 +35,17 @@ If so create by yourself an authentication token on Github and paste it in `~/.g
 
 ```
 ghm login                           login to Github
+
+# milestone commands
 ghm milestone list                  list all milestones
 ghm milestone open [milestone]      re-open milestone
 ghm milestone close [milestone]     close milestone
 ghm milestone update [milestone]    update milestone
 
+# pull-request commands
+ghm pull list                       list all pull-requests
+
+# show help
 ghm -h                              show top-level help
 ghm milestone -h                    show all milestone commands
 ghm milestone open -h               show help on a specific command
