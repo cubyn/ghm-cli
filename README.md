@@ -35,6 +35,7 @@ If so create by yourself an authentication token on Github and paste it in `~/.g
 
 ```
 ghm login                           login to Github
+ghm clean                           clean ghm's cache (repositories)
 
 # milestone commands
 ghm milestone list                  list all milestones

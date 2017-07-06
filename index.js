@@ -9,6 +9,7 @@ process.on('unhandledRejection', (error, promise) => {
 const argv = yargs
     .usage('$0 <cmd> [args]')
     .command(require('./lib/commands/login'))
+    .command(require('./lib/commands/clean'))
     .command('milestone', 'ghm milestone -h to list sub-commands', require('./lib/commands/milestone'))
     .command('pull', 'ghm pull -h to list sub-commands', require('./lib/commands/pull'))
     .demand(1, "must provide a valid command")
