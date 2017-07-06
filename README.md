@@ -42,6 +42,8 @@ ghm milestone list                  list all milestones
 ghm milestone open [milestone]      re-open milestone
 ghm milestone close [milestone]     close milestone
 ghm milestone update [milestone]    update milestone
+ghm milestone create [milestone]    create a new milestone
+ghm milestone delete [milestone]    permanently delete a milestone
 
 # pull-request commands
 ghm pull list                       list all pull-requests
