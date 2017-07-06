@@ -1,6 +1,10 @@
 Inspired from [ghi](https://github.com/stephencelis/ghi).
 
-This tool will be useful coupled with Zenhub which supports milestones spanned on multiple repositories.
+Ghm as in Github Multi-repo.
+
+Features:
+- close, update and re-open milestones spanned on multiple repositories (useful for Zenhub users)
+- list pull-requests on all organization repositories
 
 ## Installation
 
@@ -29,41 +33,25 @@ If so create by yourself an authentication token on Github and paste it in `~/.g
 
 ## Usage
 
-- **list of commands**
-
-```shell
-$ ghm --help
-
-ghm <cmd> [args]
-
-Commands:
-  login               Login to Github (no password ever stored)
-  list                List milestones in all your repos
-  close [milestone]   Close milestone
-  open [milestone]    Re-open milestone
-  update [milestone]  Update milestone
-
-Options:
-  --help  Show help   [boolean]
-
-Examples:
-  list --state all                              Will list all milestones accross your repos
-  close "Milestone #1"                          Will close all milestones named "Milestone #1"
-  update "Milestone #1" --title milestone-1     Will rename all milestones named "Milestone #1" to "milestone-1"
 ```
+ghm login                           login to Github
+ghm clean                           clean ghm's cache (repositories)
 
-- **help on one command**
+# milestone commands
+ghm milestone list                  list all milestones
+ghm milestone open [milestone]      re-open milestone
+ghm milestone close [milestone]     close milestone
+ghm milestone update [milestone]    update milestone
+ghm milestone create [milestone]    create a new milestone
+ghm milestone delete [milestone]    permanently delete a milestone
 
-```shell
-$ ghm --help update
+# pull-request commands
+ghm pull list                       list all pull-requests
 
-ghm update [milestone]
-
-Options:
-  --help       Show help                                               [boolean]
-  --force, -f  force update on closed milestones as well               [boolean]
-  --title, -t  title to change to                                       [string]
-  --due, -d    milestone's due date. format: YYYY-MM-DD                 [string]
+# show help
+ghm -h                              show top-level help
+ghm milestone -h                    show all milestone commands
+ghm milestone open -h               show help on a specific command
 ```
 
 ## Advanced configuration
